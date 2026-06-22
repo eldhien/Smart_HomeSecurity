@@ -284,8 +284,11 @@ def save_unknown_face_if_needed(current_time):
 telegram_thread = threading.Thread(target=telegram_command_listener, daemon=True)
 telegram_thread.start()
 
-# URL_HP = "http://192.168.10.249:8080/video"
+# jika mennggunkan Kamera Extrenal seperti espcam atau CCTV
+# URL_HP = "ip_camera_url"
 # cap = cv2.VideoCapture(URL_HP)
+
+# jika menggunakan kamera laptop
 cap = cv2.VideoCapture(0)
 
 frame_counter = 0
