@@ -28,9 +28,11 @@ track_names = {}
 unknown_start_time = None
 unknown_saved = False
 
-# URL_HP = "http://192.168.10.249:8080/video"
+# jika mennggunkan Kamera Extrenal seperti espcam atau CCTV
+# URL_HP = "ip_camera_url"
 # cap = cv2.VideoCapture(URL_HP)
 
+# jika menggunakan kamera laptop
 cap = cv2.VideoCapture(0)
 
 frame_counter = 0
